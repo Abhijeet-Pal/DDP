@@ -57,7 +57,8 @@ Combined_Files/
 ##
 
 ## Comparison_with_YOLO-ODD_Densenet121_CBAM_CutMix_WCE_one_subfolder.ipynb 
-Here, we have compared our model of DenseNet121 with CBAM, weighted cross entropy loss, cutmix augmentations with the YOLO-ODD model using only one subfolder of the Raw Dataset, with nearly 200 images each for one class. There are only 5 classes in this subfolder of the dataset. 
+Here, we have compared our model of DenseNet121 with CBAM, weighted cross entropy loss, cutmix augmentations with the YOLO-ODD model using only one subfolder of the Raw Dataset, with nearly 200 images each for one class. There are only 5 classes in this subfolder of the dataset. Model Name : densenet_cutmix_cbam_compare_YOLO_ODD_only_one_subfolder.pth
+
 ## Comparison_with_YOLO-ODD_Densenet121_CBAM_CutMix_WCE_with_all_Images
  Here, we have compared our model of DenseNet121 with CBAM, weighted cross entropy loss, cutmix augmentations with the YOLO-ODD model using all the images of the 5 specific classes which are used in YOLO-ODD. Our dataset is different compared to YOLO-ODD. Also, there are about 193 images which are present in Twister as well as Anthracnose Classes.
 
@@ -65,20 +66,20 @@ Here, we have compared our model of DenseNet121 with CBAM, weighted cross entrop
 Here, we have compared our model of DenseNet121 with CBAM, weighted cross entropy loss, no augmentations with the YOLO-ODD model using only one subfolder of the Raw Dataset, with nearly 200 images each for one class. There are only 5 classes in this subfolder of the dataset. 
 
 ## Densenet121_CBAM_Albumentations_Cutmix_WCE.ipynb
-Here, we have used Densenet121 model, with CBAM and Weighted Cross Entropy Loss, albumentations, cutmix. For 8 classes, Anthracnose and Twister are combined. Dataset structure needs to be same. Have combined the classes in the initial code blocks, don't need to make a new dataset. 
+Here, we have used Densenet121 model, with CBAM and Weighted Cross Entropy Loss, albumentations, cutmix. For 8 classes, Anthracnose and Twister are combined. Dataset structure needs to be same. Have combined the classes in the initial code blocks, don't need to make a new dataset. Model Name : densenet_cbam_cutmix_albumentation.pth
 
 
 ## DenseNet121_CBAM_CutMix_WCE.ipynb
-Here, we have used DenseNet121 with CBAM, WCE loss and CutMix augmentations for 8 classes, twister and anthracnose combined. This is our best model with 96.9% accuracy
+Here, we have used DenseNet121 with CBAM, WCE loss and CutMix augmentations for 8 classes, twister and anthracnose combined. This is our best model with 96.9% accuracy, Model Name : densenet_cutmix_cbam.pth
 
 ## DenseNet121_CBAM_Focal_Loss.ipynb
-We use DenseNet121 with CBAM, Focal Loss, no augmentations for 8 classes, twister and anthracnose combined.
+We use DenseNet121 with CBAM, Focal Loss, no augmentations for 8 classes, twister and anthracnose combined. Model Name : densenet_cbam_focal_loss.pth
 
 ## DenseNet121_CBAM_WCE.ipynb
-Have used DenseNet121 with CBAM, WCE, no augmentations for 8 classes, twister and anthracnose combined.
+Have used DenseNet121 with CBAM, WCE, no augmentations for 8 classes, twister and anthracnose combined. Model Name : densenet_cbam_wce.pth
 
 ## DenseNet121_LORA_WCE.ipynb 
-We use LORA (Low Rank Adaptation) to train the initial layer of a DenseNet121 model. Need dataset structure to be as shown in Dataset Structure above, no other changes required 
+We use LORA (Low Rank Adaptation) to train the initial layer of a DenseNet121 model. Need dataset structure to be as shown in Dataset Structure above, no other changes required , Model name : densenet121_lora.pth
 
 
 
@@ -90,10 +91,10 @@ Here, we have combined Anthracnose and Twister classes (7 disease + 1 Healthy), 
 
 
 ## DenseNet121_WCE_Albumentations.ipynb
-Have used DenseNet121 with WCE loss and Albumentations based augmentations for 8 classes, anthracnose and twister combined.
+Have used DenseNet121 with WCE loss and Albumentations based augmentations for 8 classes, anthracnose and twister combined. Model Name : densenet121_albumentation_wce.pth
 
 ## DenseNet121_WCE_CutMix.ipynb
-Have used DenseNet121 with WCE loss and Cutmix augmentations for 8 classes, anthracnose and twister combined.
+Have used DenseNet121 with WCE loss and Cutmix augmentations for 8 classes, anthracnose and twister combined. Model Name : densenet_cutmix_wce.pth
 
 ## Generate_Images_Using_Diffusion.ipynb
 Here we generate images of the pest crops using diffusion models. Requires Python Version : 3.11.11 and Cuda Version : 11.8. Need to run it for more epochs.
@@ -109,4 +110,7 @@ Here, we have experiments considering all the 9 classes (8 Disease + 1 Healthy),
 We also try to classify the images using Vision Transformers, however as the dataset does not have many images, accuracy is low.
 
 # Best Model
-Best model is DenseNet121 with CBAM, Cutmix and WCE loss. File : DenseNet121_CBAM_CutMix_WCE
+Best model is DenseNet121 with CBAM, Cutmix and WCE loss. File : DenseNet121_CBAM_CutMix_WCE, Model Name : densenet_cutmix_cbam.pth
+
+
+Large models are not uploaded, such as ViT and Diffusion models
